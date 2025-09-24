@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+    background-color: black;
+}
+body {
+    font-family: "Cairo", sans-serif;
+}
+:root {
+    /* This is for transition */
+    --main-transition: 0.3s; 
+    /* Colors I'm using */
+    --main-color-white-mode: #6B3F69;
+    --main-color-2: #8D5F8C;
+    --main-color-dark-mode: #A376A2;
+    --main-color-background: #DDC3C3;
+}
