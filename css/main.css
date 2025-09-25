@@ -269,12 +269,20 @@ main .main .img img {
     display: flex;
     align-items: center;
 }
-.cards {
+.projects .cards {
     display: flex;
     justify-content: space-between;
     perspective: 1000px; /* needed for 3D depth */
-  }
-  
+}
+@media (max-width: 768px) {
+    .projects .cards {
+        flex-direction: column;
+    }
+}
+
+
+
+
   .projects .cards .card {
     width: 350px;
     height: 400px;
@@ -322,10 +330,29 @@ main .main .img img {
 .contact .container .details p {
     max-width: 400px;
 }
+.contact .container .button {
+    background-color: var(--main-color-white-mode);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
 .email, 
 .message {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+@media (max-width: 768px) {
+    .contact .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .details {
+        margin-bottom: 20px;
+    }
 }
