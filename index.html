@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+        <!-- The purpose of this file is to reset styles all across different browsers -->
+        <link rel="stylesheet" href="/css/normalize.css">
     <!-- Main css style file -->
     <link rel="stylesheet" href="/css/main.css"> 
-    <!-- The purpose of this file is to reset styles all across different browsers -->
-    <link rel="stylesheet" href="/css/normalize.css">
     <!-- This is related to the webfont for icons -->
     <link rel="stylesheet" href="/css/all.css">
     <!-- Google Font -->
@@ -55,11 +55,13 @@
     <!-- About me -->
     <section id="about-me">
         <div class="container">
+            <h2 class="main-title">About Me</h2>
             <div class="main">
                 <div class="card a">
-                    <img src="/assets//imgs/coding-pov.png" alt="">
                     <div class="text">
-                        <p>This is Mohammed, I'm a cs student. Interested in web development</p>
+                        <p>This is Mohammed, I'm a cs student. 
+                            <br>
+                            Interested in web development</p>
                     </div>
                 </div>
                 <div class="card b">
@@ -69,7 +71,7 @@
                     <img src="/assets/imgs/images (1).jpeg" alt="">
                 </div>
                 <div class="card d">
-                    <img src="/assets/imgs/img.jpg" alt="">
+                    <img src="/assets//imgs/coding-pov.png" alt="">
                 </div>
             </div>
         </div>
@@ -77,6 +79,7 @@
     <!-- Projects section -->
     <div class="projects" id="projects">
         <div class="container">
+            <h2 class="main-title">Projects</h2>
             <div class="cards">
                 <div class="card">
                     <div class="front">
@@ -114,26 +117,31 @@
             </div>
         </div>
     </div>
+    <!-- Contact -->
     <div class="contact" id="contact">
         <div class="container">
-            <div class="details">
-                <p class="lead">Have a question, a project idea or just want to say hi? Drop a message — I’ll get back to you soon.</p>
-                <p>Get in touch</p>
+            <h2 class="main-title">Contact</h2>
+            <div class="info">
+                <div class="details">
+                    <p class="lead">Have a question, a project idea or just want to say hi? Drop a message — I’ll get back to you soon.
+                        <br>
+                        Get in touch..
+                    </p>
+                </div>
+                <form >
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+                    </div>
+                    <div class="message">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Write your message..."></textarea>
+                    </div>
+                    <button class="button" type="submit">
+                        Submit
+                    </button>
+                </form>
             </div>
-            <form >
-                <div class="email">
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
-                </div>
-                <div class="message">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required placeholder="Write your message..."></textarea>
-                </div>
-                <button class="button" type="submit">
-                    Submit
-                </button>
-            </form>
-            
         </div>
     </div>
     <!-- JS file -->
