@@ -6,13 +6,13 @@ let listElements = document.querySelectorAll('a')
 
 // Header sticky effect
 window.addEventListener('scroll', () => {
-    let height = window.scrollY
+    let height = window.scrollY;
     if (height >= 40) {
         header.style.backgroundColor = "rgb(211, 211, 211)" 
         header.style.boxShadow = '0 2px 6px rgba(0,0,0, 0.5)';
-        header.style.color = "#333"
+        header.style.color = "#6B3F69"
         listElements.forEach(el => {
-            el.style.color = "#333"
+            el.style.color = "#6B3F69"
         })
     }
     else {
@@ -41,4 +41,11 @@ modeBtn.addEventListener('click', () => {
     modeBtn.classList.add('fa-sun');
     modeBtn.style.color = "white";
 }
+})
+// Down scroll effect 
+down_arrow.addEventListener('click', () => {
+    window.scrollBy({
+        top: window.innerHeight,
+        behavior: "smooth"  
+    });
 })
