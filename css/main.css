@@ -5,7 +5,7 @@
 }
 html {
     scroll-behavior: smooth;
-    background-color: #121212;
+    background-color: #121212; /* Default mode is dark one */
     color: var(--main-color-background);
 }
 html.white body {
@@ -175,8 +175,6 @@ header .bars {
     header .container .icons .bars {
         display: flex;
         justify-content: space-between;
-        /* position: absolute;
-        right: 80px; */
     }
 }
 .logo {
@@ -337,7 +335,6 @@ main .main .img img {
     .projects {
         height: 150vh;
         margin: 300px auto;
-        /* overflow: hidden; */
     }
     .projects .container .cards{
         display: flex;

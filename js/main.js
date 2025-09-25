@@ -28,15 +28,17 @@ window.addEventListener('scroll', () => {
 // This block of code to toggle between light and dark modes
 
 modeBtn.addEventListener('click', () => {
+    // Mainly if the html page is white, we remove the sun icon and add the moon one to indicate that if we click we will be in the dark mode 
     html.classList.toggle('white');
     if (html.classList.contains('white')){ 
-    modeBtn.classList.remove('fa-sun');
+    modeBtn.classList.remove('fa-sun'); // To remove the sun icon 
     modeBtn.style.color = "#121212";
-    modeBtn.classList.add('fa-moon');
-    modeBtn.style.color = "black";
+    modeBtn.classList.add('fa-moon'); // To add the moon icon
+    modeBtn.style.color = "black"; // color of the icon 
 
 }
     else {
+    // Here we are doing the opposite of the if statement above
     modeBtn.classList.remove('fa-moon');
     modeBtn.classList.add('fa-sun');
     modeBtn.style.color = "white";
